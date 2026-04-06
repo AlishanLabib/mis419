@@ -39,7 +39,7 @@
             width: 100vw;
             justify-content: flex-start;
             overflow: hidden;
-            padding: 6vh 8vw; /* Responsive full-screen padding */
+            padding: 5vh 6vw; /* Adjusted for larger fonts */
             position: absolute;
             top: 0;
             left: 0;
@@ -105,22 +105,22 @@
             color: #d1d5db;
             font-family: 'Inter', sans-serif;
             font-weight: 400;
-            line-height: 1.6;
+            line-height: 1.7;
         }
 
         /* Highlight Colors - Purple & Cyan */
         .text-cyan { color: #22D3EE; }
         .text-purple { color: #A855F7; }
 
-        /* Font Sizes */
-        .slide-container h1 { font-size: 64px; line-height: 1.1; margin-bottom: 20px;}
-        .slide-container .slide-title { font-size: 46px; margin-bottom: 30px; width: 100%; text-align: left; }
-        .slide-container h3 { font-size: 26px; margin-bottom: 12px; }
+        /* Font Sizes - Scaled up for Full Screen */
+        .slide-container h1 { font-size: 76px; line-height: 1.2; margin-bottom: 24px;}
+        .slide-container .slide-title { font-size: 54px; margin-bottom: 35px; width: 100%; text-align: left; }
+        .slide-container h3 { font-size: 30px; margin-bottom: 16px; }
         .slide-container p, 
         .slide-container li, 
         .slide-container td, 
-        .slide-container th { font-size: 17px; }
-        .slide-container .subtitle { font-size: 22px; color: #9ca3af; margin-bottom: 30px;}
+        .slide-container th { font-size: 21px; }
+        .slide-container .subtitle { font-size: 28px; color: #9ca3af; margin-bottom: 35px;}
 
         .content-area {
             display: flex;
@@ -170,17 +170,17 @@
         .two-column {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 50px;
+            gap: 60px;
             width: 100%;
             align-items: center;
         }
         .image-wrapper {
             border-radius: 12px;
-            height: 400px;
+            height: 450px;
             width: 100%;
             overflow: hidden;
             border: 2px solid #22D3EE;
-            box-shadow: 0 10px 25px rgba(34, 211, 238, 0.2);
+            box-shadow: 0 10px 30px rgba(34, 211, 238, 0.25);
         }
         .image-wrapper img, .image-wrapper iframe {
             height: 100%;
@@ -196,7 +196,7 @@
             background-color: rgba(255, 255, 255, 0.03);
             border: 1px solid rgba(255, 255, 255, 0.1);
             border-radius: 12px;
-            padding: 40px;
+            padding: 45px;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -208,7 +208,7 @@
         /* Tiled Text With Icons */
         .tiled-content {
             display: flex;
-            gap: 25px;
+            gap: 30px;
             width: 100%;
             justify-content: space-between;
             align-items: stretch;
@@ -217,7 +217,7 @@
             background-color: rgba(255, 255, 255, 0.03);
             border: 1px solid rgba(255, 255, 255, 0.1);
             border-radius: 12px;
-            padding: 25px;
+            padding: 30px;
             flex: 1;
             text-align: left;
             display: flex;
@@ -225,8 +225,8 @@
         }
         .tile .icon {
             color: #A855F7;
-            font-size: 36px;
-            margin-bottom: 15px;
+            font-size: 44px;
+            margin-bottom: 20px;
         }
         
         /* Tiled Images */
@@ -237,50 +237,50 @@
             text-align: center;
         }
         .image-tile .image-wrapper {
-            height: 250px;
-            margin-bottom: 20px;
-            border: 1px solid #A855F7;
-            box-shadow: 0 5px 15px rgba(168, 85, 247, 0.2);
+            height: 280px;
+            margin-bottom: 25px;
+            border: 2px solid #A855F7;
+            box-shadow: 0 8px 20px rgba(168, 85, 247, 0.2);
         }
 
         /* Bar Chart */
         .chart-container {
             display: flex;
             flex-direction: column;
-            gap: 25px;
+            gap: 30px;
             width: 100%;
             justify-content: center;
         }
         .bar {
             display: flex;
             align-items: center;
-            gap: 20px;
+            gap: 25px;
         }
         .bar .label {
             color: #f3f4f6;
-            flex: 0 0 200px;
+            flex: 0 0 250px;
             font-weight: 600;
             text-align: right;
             font-family: 'Poppins', sans-serif;
-            font-size: 20px;
+            font-size: 24px;
         }
         .bar .bar-inner {
             background-color: rgba(255, 255, 255, 0.05);
-            border-radius: 8px;
+            border-radius: 10px;
             flex-grow: 1;
-            height: 40px;
+            height: 48px;
             overflow: hidden;
         }
         .bar .bar-fill {
             align-items: center;
-            border-radius: 8px;
+            border-radius: 10px;
             color: #050505;
             display: flex;
-            font-size: 16px;
+            font-size: 18px;
             font-weight: 700;
             height: 100%;
             justify-content: flex-end;
-            padding-right: 15px;
+            padding-right: 20px;
             background: linear-gradient(90deg, #22D3EE, #06b6d4);
         }
         .bar:nth-child(2) .bar-fill { background: linear-gradient(90deg, #A855F7, #9333ea); color: white;}
@@ -296,17 +296,17 @@
         }
         .number {
             color: #22D3EE;
-            font-size: 160px;
+            font-size: 180px;
             font-weight: 700;
             font-family: 'Poppins', sans-serif;
             line-height: 1;
-            text-shadow: 0 0 40px rgba(34, 211, 238, 0.4);
+            text-shadow: 0 0 50px rgba(34, 211, 238, 0.4);
         }
         .number-label {
-            font-size: 28px;
+            font-size: 32px;
             font-weight: 600;
             color: #f3f4f6;
-            margin-top: 10px;
+            margin-top: 15px;
         }
 
         /* Styled Bullet Points */
@@ -315,13 +315,13 @@
         }
         .bullet-list li {
             position: relative;
-            padding-left: 50px;
-            margin-bottom: 25px;
-            font-size: 18px;
+            padding-left: 60px;
+            margin-bottom: 30px;
+            font-size: 21px;
         }
         .bullet-list i {
             color: #A855F7;
-            font-size: 28px;
+            font-size: 32px;
             position: absolute;
             left: 0;
             top: 0;
@@ -329,9 +329,9 @@
         .bullet-list strong {
             color: #f3f4f6;
             display: block;
-            margin-bottom: 5px;
+            margin-bottom: 8px;
             font-family: 'Poppins', sans-serif;
-            font-size: 22px;
+            font-size: 26px;
         }
 
         /* Table */
@@ -345,7 +345,7 @@
             table-layout: fixed;
         }
         th, td {
-            padding: 18px;
+            padding: 22px;
             text-align: left;
             border-bottom: 1px solid rgba(255, 255, 255, 0.1);
             vertical-align: top;
@@ -355,12 +355,12 @@
             color: #22D3EE;
             font-family: 'Poppins', sans-serif;
             font-weight: 600;
-            font-size: 18px;
+            font-size: 22px;
         }
         tr:last-child td { border-bottom: none; }
         
         .bmc-table th { background-color: rgba(34, 211, 238, 0.1); color: #A855F7;}
-        .bmc-table td ul { padding-left: 20px; margin-top: 5px;}
+        .bmc-table td ul { padding-left: 24px; margin-top: 8px;}
 
         /* Timeline */
         .timeline-layout {
@@ -370,14 +370,14 @@
             position: relative;
             width: 100%;
             height: stretch;
-            margin-top: 50px;
+            margin-top: 60px;
         }
         .timeline-line {
             position: absolute;
             top: 50%;
             left: 0;
             width: 100%;
-            height: 4px;
+            height: 6px;
             background: rgba(255, 255, 255, 0.1);
             transform: translateY(-50%);
             z-index: 0;
@@ -393,10 +393,10 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            width: 24px;
-            height: 24px;
+            width: 30px;
+            height: 30px;
             background-color: #050505;
-            border: 4px solid #22D3EE;
+            border: 5px solid #22D3EE;
             border-radius: 50%;
             z-index: 1;
         }
@@ -407,22 +407,22 @@
         }
         .timeline-item:nth-child(odd) .content-wrapper {
             bottom: 50%;
-            margin-bottom: 30px;
+            margin-bottom: 40px;
         }
         .timeline-item:nth-child(even) .content-wrapper {
             top: 50%;
-            margin-top: 30px;
+            margin-top: 40px;
         }
         .timeline-item h3 {
             color: #A855F7;
-            font-size: 24px;
-            margin-bottom: 10px;
+            font-size: 28px;
+            margin-bottom: 12px;
         }
 
         /* Area Chart */
         .area-chart-container {
             width: 100%;
-            padding: 20px;
+            padding: 25px;
             background: rgba(255, 255, 255, 0.02);
             border-radius: 12px;
             border: 1px solid rgba(255, 255, 255, 0.05);
@@ -434,18 +434,18 @@
         }
         .area-chart-svg .grid line { stroke: rgba(255, 255, 255, 0.1); stroke-width: 1; }
         .area-chart-svg .area-fill { fill: url(#area-gradient); stroke: none; }
-        .area-chart-svg .line-stroke { fill: none; stroke: #22D3EE; stroke-width: 4; stroke-linejoin: round;}
-        .area-chart-svg .data-point { fill: #050505; stroke: #22D3EE; stroke-width: 3; }
-        .area-chart-svg .axis-labels text { fill: #9ca3af; font-size: 16px; font-family: 'Inter', sans-serif; }
+        .area-chart-svg .line-stroke { fill: none; stroke: #22D3EE; stroke-width: 5; stroke-linejoin: round;}
+        .area-chart-svg .data-point { fill: #050505; stroke: #22D3EE; stroke-width: 4; }
+        .area-chart-svg .axis-labels text { fill: #9ca3af; font-size: 18px; font-family: 'Inter', sans-serif; }
         .y-axis-labels text { text-anchor: end; }
         .x-axis-labels text { text-anchor: middle; }
         
         #formula-container {
-            margin-top: 30px;
-            padding: 20px;
+            margin-top: 35px;
+            padding: 25px;
             background: rgba(168, 85, 247, 0.1);
-            border-left: 4px solid #A855F7;
-            border-radius: 0 8px 8px 0;
+            border-left: 5px solid #A855F7;
+            border-radius: 0 10px 10px 0;
         }
 
         /* Section Title & Q&A */
@@ -459,15 +459,15 @@
             width: 100%;
         }
         .section-title-layout hr {
-            width: 100px;
-            height: 6px;
+            width: 120px;
+            height: 8px;
             background: #A855F7;
             border: none;
-            margin-bottom: 30px;
-            border-radius: 3px;
+            margin-bottom: 35px;
+            border-radius: 4px;
         }
-        .qa-layout h2 { font-size: 80px; margin-bottom: 20px; color: #22D3EE;}
-        .qa-layout .contact-info { margin-top: 40px; font-size: 22px; color: #d1d5db; }
+        .qa-layout h2 { font-size: 100px; margin-bottom: 25px; color: #22D3EE;}
+        .qa-layout .contact-info { margin-top: 50px; font-size: 26px; color: #d1d5db; }
         .qa-layout .contact-info span { color: #A855F7; font-weight: 600;}
 
         /* Presentation Controls */
@@ -483,11 +483,11 @@
             background: rgba(168, 85, 247, 0.15);
             border: 1px solid rgba(168, 85, 247, 0.5);
             color: #f3f4f6;
-            padding: 12px 20px;
+            padding: 14px 24px;
             border-radius: 8px;
             cursor: pointer;
             font-family: 'Poppins', sans-serif;
-            font-size: 16px;
+            font-size: 18px;
             transition: all 0.2s ease;
             backdrop-filter: blur(5px);
         }
@@ -501,10 +501,10 @@
             left: 30px;
             color: #9ca3af;
             font-family: 'Inter', sans-serif;
-            font-size: 18px;
+            font-size: 20px;
             z-index: 1000;
             background: rgba(0, 0, 0, 0.5);
-            padding: 10px 20px;
+            padding: 12px 24px;
             border-radius: 8px;
             backdrop-filter: blur(5px);
         }
@@ -517,11 +517,11 @@
 <div class="slide-container" id="slide1">
     <div class="title-layout">
         <h1>E-Commerce Architecture &<br>Digital Business Strategies</h1>
-        <p class="subtitle" style="font-size: 28px; color: #22D3EE;">of Emon's Games Gallery</p>
-        <div style="margin-top: 40px; text-align: center;">
-            <p style="font-size: 20px; color: #f3f4f6; font-weight: 600;">Presented by</p>
-            <p style="font-size: 24px; color: #A855F7; font-family: 'Poppins', sans-serif;">Alishan Bhuiyan Labib</p>
-            <p style="font-size: 16px; margin-top: 10px;">MIS 7419: E-commerce and Web Programming</p>
+        <p class="subtitle" style="font-size: 32px; color: #22D3EE;">of Emon's Games Gallery</p>
+        <div style="margin-top: 50px; text-align: center;">
+            <p style="font-size: 24px; color: #f3f4f6; font-weight: 600;">Presented by</p>
+            <p style="font-size: 32px; color: #A855F7; font-family: 'Poppins', sans-serif;">Alishan Bhuiyan Labib</p>
+            <p style="font-size: 20px; margin-top: 15px;">MIS 7419: E-commerce and Web Programming</p>
         </div>
     </div>
 </div>
@@ -532,19 +532,19 @@
     <div class="content-area">
         <div class="two-column">
             <div>
-                <h3 style="font-size: 42px; margin-bottom: 20px;">Every gamer wants to play...</h3>
-                <p style="font-size: 32px; font-weight: 600; margin-bottom: 30px;">But <span class="text-cyan">price</span> matters.</p>
+                <h3 style="font-size: 52px; margin-bottom: 25px;">Every gamer wants to play...</h3>
+                <p style="font-size: 42px; font-weight: 600; margin-bottom: 35px;">But <span class="text-cyan">price</span> matters.</p>
                 
-                <p style="font-size: 20px; line-height: 1.8;">
+                <p style="font-size: 24px; line-height: 1.8;">
                     How did you enjoy this trailer? Like every gamer out there, the desire to dive into AAA experiences like Resident Evil is strong. 
                 </p>
-                <p style="font-size: 20px; line-height: 1.8; margin-top: 20px;">
+                <p style="font-size: 24px; line-height: 1.8; margin-top: 25px;">
                     That's why, for the first time in Bangladesh, we bring you the absolute cheapest prices at <strong>Emon's Games Gallery</strong>. Click play to experience the thrill.
                 </p>
             </div>
             <div>
                 <!-- Embedded YouTube Video -->
-                <div class="image-wrapper" style="border: 3px solid #A855F7; box-shadow: 0 0 30px rgba(168,85,247,0.4);">
+                <div class="image-wrapper" style="border: 3px solid #A855F7; box-shadow: 0 0 35px rgba(168,85,247,0.4);">
                     <iframe width="100%" height="100%" src="https://www.youtube.com/embed/0wFNN1f6hF8?autoplay=0&controls=1" title="Resident Evil Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
@@ -559,10 +559,10 @@
         <div class="two-column">
             <div>
                 <h3 class="text-cyan">Our Mission</h3>
-                <p style="margin-bottom: 25px;">To democratise access to premium digital gaming content for the Bangladeshi community by offering affordable prices, lifetime guarantees, and exceptional support.</p>
+                <p style="margin-bottom: 30px;">To democratise access to premium digital gaming content for the Bangladeshi community by offering affordable prices, lifetime guarantees, and exceptional support.</p>
                 
                 <h3 class="text-cyan">Product Categories</h3>
-                <ul style="padding-left: 20px; line-height: 1.8;">
+                <ul style="padding-left: 25px; line-height: 1.9;">
                     <li><strong>Global Product Keys:</strong> Permanent, lifetime-guaranteed access.</li>
                     <li><strong>Online Activation:</strong> Denuvo-supported multiplayer access.</li>
                     <li><strong>Offline Activation:</strong> Extreme budget AAA gaming.</li>
@@ -584,12 +584,12 @@
     <div class="content-area">
         <div class="two-column tiled">
             <div>
-                <h3><i class="fa-solid fa-box-open" style="color: #22D3EE; margin-bottom: 10px;"></i> Comprehensive Catalog</h3>
+                <h3><i class="fa-solid fa-box-open" style="color: #22D3EE; margin-bottom: 15px;"></i> Comprehensive Catalog</h3>
                 <p>We offer a diverse range of digital gaming assets including Steam, Epic Games, and Origin global keys, along with offline PC activations and dedicated PlayStation accounts. Our inventory covers everything from latest AAA releases to popular indie titles.</p>
             </div>
             <div>
-                <h3><i class="fa-solid fa-hand-holding-heart" style="color: #A855F7; margin-bottom: 10px;"></i> Customer Benefits</h3>
-                <ul style="padding-left: 20px; line-height: 1.8; margin-top: 10px;">
+                <h3><i class="fa-solid fa-hand-holding-heart" style="color: #A855F7; margin-bottom: 15px;"></i> Customer Benefits</h3>
+                <ul style="padding-left: 25px; line-height: 1.9; margin-top: 15px;">
                     <li><strong>Cost Efficiency:</strong> Access premium games at a fraction of the standard retail price.</li>
                     <li><strong>Instant Gratification:</strong> Digital delivery via messaging ensures immediate gameplay.</li>
                     <li><strong>Authenticity & Trust:</strong> 100% verified keys and secure offline activations protecting hardware.</li>
@@ -714,8 +714,8 @@
     <div class="content-area">
         <div class="two-column">
             <div>
-                <h3 style="font-size: 32px; color: #22D3EE; margin-bottom: 20px;">Secure Gaming Architecture</h3>
-                <p style="font-size: 20px; line-height: 1.8; margin-bottom: 20px;">
+                <h3 style="font-size: 40px; color: #22D3EE; margin-bottom: 25px;">Secure Gaming Architecture</h3>
+                <p style="font-size: 24px; line-height: 1.8; margin-bottom: 25px;">
                     Unlike grey-market cracked software, our offerings strictly adhere to official <strong>Anti-Tamper Technologies</strong>. 
                 </p>
                 <div class="bullet-list">
@@ -738,22 +738,22 @@
 <div class="slide-container" id="slide9">
     <h2 class="slide-title">Comprehensive SEO & <span class="text-cyan">Traffic Strategy</span></h2>
     <div class="content-area">
-        <div class="tiled-content" style="gap: 15px;">
-            <div class="tile" style="padding: 25px;">
-                <h3 style="font-size: 22px; color: #22D3EE; margin-bottom: 15px;">5.1 & 5.2: SEO & Meta Tags</h3>
-                <p style="font-size: 16px;">Implementation of dynamic semantic HTML tags, highly targeted meta descriptions, and Open Graph tags for optimal sharing previews.</p>
+        <div class="tiled-content" style="gap: 20px;">
+            <div class="tile" style="padding: 30px;">
+                <h3 style="font-size: 26px; color: #22D3EE; margin-bottom: 20px;">5.1 & 5.2: SEO & Meta Tags</h3>
+                <p style="font-size: 20px;">Implementation of dynamic semantic HTML tags, highly targeted meta descriptions, and Open Graph tags for optimal sharing previews.</p>
             </div>
-            <div class="tile" style="padding: 25px;">
-                <h3 style="font-size: 22px; color: #A855F7; margin-bottom: 15px;">5.3: Meta & Google Ads</h3>
-                <p style="font-size: 16px;">Aggressive CPC campaigns capturing high-intent Google searchers ("buy games BD") and visually retargeting them via Facebook & Instagram Ads.</p>
+            <div class="tile" style="padding: 30px;">
+                <h3 style="font-size: 26px; color: #A855F7; margin-bottom: 20px;">5.3: Meta & Google Ads</h3>
+                <p style="font-size: 20px;">Aggressive CPC campaigns capturing high-intent Google searchers ("buy games BD") and visually retargeting them via Facebook & Instagram Ads.</p>
             </div>
-            <div class="tile" style="padding: 25px;">
-                <h3 style="font-size: 22px; color: #22D3EE; margin-bottom: 15px;">5.4 & 5.6: Social & Organic</h3>
-                <p style="font-size: 16px;">Building a loyal community through engaged Facebook groups, viral gaming reels, and organic word-of-mouth recommendations.</p>
+            <div class="tile" style="padding: 30px;">
+                <h3 style="font-size: 26px; color: #22D3EE; margin-bottom: 20px;">5.4 & 5.6: Social & Organic</h3>
+                <p style="font-size: 20px;">Building a loyal community through engaged Facebook groups, viral gaming reels, and organic word-of-mouth recommendations.</p>
             </div>
-            <div class="tile" style="padding: 25px;">
-                <h3 style="font-size: 22px; color: #A855F7; margin-bottom: 15px;">5.5: Google Indexing</h3>
-                <p style="font-size: 16px;">Direct XML sitemap submissions to Google Search Console to ensure the entire product catalog is crawled, ranked, and discovered rapidly.</p>
+            <div class="tile" style="padding: 30px;">
+                <h3 style="font-size: 26px; color: #A855F7; margin-bottom: 20px;">5.5: Google Indexing</h3>
+                <p style="font-size: 20px;">Direct XML sitemap submissions to Google Search Console to ensure the entire product catalog is crawled, ranked, and discovered rapidly.</p>
             </div>
         </div>
     </div>
@@ -778,7 +778,7 @@
                 <div class="bar-inner"><div class="bar-fill" style="width: 40%;">2,000 BDT</div></div>
             </div>
         </div>
-        <div style="margin-top: 30px; display: flex; justify-content: space-between; background: rgba(255,255,255,0.03); padding: 20px; border-radius: 8px;">
+        <div style="margin-top: 40px; display: flex; justify-content: space-between; background: rgba(255,255,255,0.03); padding: 30px; border-radius: 12px;">
             <p><strong>Facebook:</strong> Primary driver for awareness and retargeting.</p>
             <p><strong>Google:</strong> High-intent bottom-funnel searches ("cheap games BD").</p>
         </div>
@@ -791,13 +791,13 @@
     <div class="content-area">
         <div class="two-column highlight-numbers-layout">
             <div>
-                <div class="number" style="font-size: 120px;">PC<span style="font-size: 60px;"> First</span></div>
+                <div class="number" style="font-size: 160px;">PC<span style="font-size: 80px;"> First</span></div>
                 <div class="number-label">Audience Hierarchy</div>
             </div>
             <div>
                 <h3>Targeting the Core Gamer</h3>
-                <p style="margin-bottom: 15px;">Our core demographic consists of dedicated male gamers aged 15-30. We prioritize our marketing based on platform engagement and revenue potential:</p>
-                <ul style="padding-left: 20px; line-height: 1.8; font-size: 18px; color: #d1d5db;">
+                <p style="margin-bottom: 20px;">Our core demographic consists of dedicated male gamers aged 15-30. We prioritize our marketing based on platform engagement and revenue potential:</p>
+                <ul style="padding-left: 25px; line-height: 1.9; font-size: 22px; color: #d1d5db;">
                     <li><strong>1. PC Gamers:</strong> Our primary market, actively seeking affordable AAA titles, offline activations, and global Steam keys.</li>
                     <li><strong>2. PlayStation (PS) Gamers:</strong> Our secondary focus, consisting of console owners looking for PSN accounts and exclusives.</li>
                     <li><strong>3. Mobile Gamers:</strong> A supplementary segment targeted for quick in-game top-ups and microtransactions.</li>
@@ -889,16 +889,16 @@
     <div class="content-area">
         <div class="two-column highlight-numbers-layout">
             <div>
-                <div style="font-size: 80px; color: #22D3EE; display: flex; justify-content: center; gap: 20px; margin-bottom: 20px;">
+                <div style="font-size: 100px; color: #22D3EE; display: flex; justify-content: center; gap: 30px; margin-bottom: 25px;">
                     <i class="fa-solid fa-money-bill-transfer"></i>
                     <i class="fa-brands fa-cc-visa"></i>
                 </div>
-                <div class="number-label" style="font-size: 32px;">Seamless Checkouts</div>
+                <div class="number-label" style="font-size: 40px;">Seamless Checkouts</div>
             </div>
             <div>
                 <h3>Frictionless Payment Gateways</h3>
-                <p style="margin-bottom: 15px;">The biggest barrier in BD e-commerce is payment complexity. We've simplified the digital card purchasing process to under 3 clicks.</p>
-                <div class="bullet-list" style="margin-top: 20px;">
+                <p style="margin-bottom: 20px;">The biggest barrier in BD e-commerce is payment complexity. We've simplified the digital card purchasing process to under 3 clicks.</p>
+                <div class="bullet-list" style="margin-top: 30px;">
                     <ul>
                         <li><i class="fa-solid fa-mobile-screen"></i><strong>Mobile Financial Services (MFS):</strong> Direct integration guidelines for <strong>bKash, Nagad, Upay, and Rocket</strong> ensuring instant mobile transfers.</li>
                         <li><i class="fa-regular fa-credit-card"></i><strong>Card Networks:</strong> Seamless acceptance flows for <strong>Visa, Mastercard, and local bank cards</strong> for our premium tier customers.</li>
@@ -1097,11 +1097,11 @@
     <div class="content-area">
         <div class="two-column tiled">
             <div>
-                <h3><i class="fa-solid fa-coins" style="color: #22D3EE; margin-bottom: 10px;"></i> Lean Operations</h3>
+                <h3><i class="fa-solid fa-coins" style="color: #22D3EE; margin-bottom: 15px;"></i> Lean Operations</h3>
                 <p>Operating with zero fixed web hosting costs (thanks to Netlify) and zero physical inventory storage. This completely eliminates traditional overhead, allowing us to pass maximum discounts directly to the consumer and maintain highly competitive pricing margins.</p>
             </div>
             <div>
-                <h3><i class="fa-solid fa-arrow-trend-up" style="color: #A855F7; margin-bottom: 10px;"></i> Growth Reinvestment</h3>
+                <h3><i class="fa-solid fa-arrow-trend-up" style="color: #A855F7; margin-bottom: 15px;"></i> Growth Reinvestment</h3>
                 <p>Our financial strategy mandates that 40% of net profits from early quarters are aggressively reinvested into expanding our Meta & Google CPC budgets. This creates a compounding growth loop for customer acquisition.</p>
             </div>
         </div>
@@ -1152,8 +1152,8 @@
         </div>
         
         <div id="formula-container">
-            <p style="font-size: 16px; margin-bottom: 5px;">Projected <strong>~5x Revenue Growth</strong> driven by reinvested digital ROI:</p>
-            <math xmlns="http://www.w3.org/1998/Math/MathML" display="block" style="font-size: 20px; color: #f3f4f6;">
+            <p style="font-size: 24px; margin-bottom: 8px;">Projected <strong>~5x Revenue Growth</strong> driven by reinvested digital ROI:</p>
+            <math xmlns="http://www.w3.org/1998/Math/MathML" display="block" style="font-size: 28px; color: #f3f4f6;">
                 <mrow>
                     <mi>R</mi><mi>O</mi><mi>I</mi>
                     <mo>=</mo>
@@ -1178,8 +1178,8 @@
     <div class="content-area">
         <div class="two-column tiled">
             <div>
-                <h3><i class="fa-solid fa-check-circle" style="color:#22c55e; margin-right: 10px;"></i>Strengths & Opportunities</h3>
-                <ul style="padding-left: 20px; margin-top: 10px;">
+                <h3><i class="fa-solid fa-check-circle" style="color:#22c55e; margin-right: 15px;"></i>Strengths & Opportunities</h3>
+                <ul style="padding-left: 25px; margin-top: 15px;">
                     <li>Lowest prices in the Bangladesh market.</li>
                     <li>Zero fixed infrastructure cost (lean model).</li>
                     <li>Rapidly growing BD gaming/e-sports market.</li>
@@ -1187,8 +1187,8 @@
                 </ul>
             </div>
             <div>
-                <h3><i class="fa-solid fa-triangle-exclamation" style="color:#ef4444; margin-right: 10px;"></i>Weaknesses & Threats</h3>
-                <ul style="padding-left: 20px; margin-top: 10px;">
+                <h3><i class="fa-solid fa-triangle-exclamation" style="color:#ef4444; margin-right: 15px;"></i>Weaknesses & Threats</h3>
+                <ul style="padding-left: 25px; margin-top: 15px;">
                     <li>Heavy reliance on third-party social media (Meta).</li>
                     <li>No native automated backend order management.</li>
                     <li>Publisher DRM policy shifts causing key invalidation.</li>
@@ -1229,8 +1229,8 @@
 <div class="slide-container" id="slide21">
     <div class="section-title-layout">
         <hr>
-        <h2 style="font-size: 56px; margin-bottom: 25px;">A Scalable Digital <span class="text-cyan">Future</span></h2>
-        <p style="font-size: 22px; max-width: 800px; color: #d1d5db;">
+        <h2 style="font-size: 72px; margin-bottom: 30px;">A Scalable Digital <span class="text-cyan">Future</span></h2>
+        <p style="font-size: 28px; max-width: 900px; color: #d1d5db;">
             Emon’s Games Gallery demonstrates a highly effective, lean digital commerce model for emerging markets. By leveraging modern web technologies, zero-cost infrastructure, and strategic digital marketing, we bridge the gap between premium global gaming and price-sensitive local consumers.
         </p>
     </div>
@@ -1239,9 +1239,9 @@
 <!-- Slide 26: Live Demonstration -->
 <div class="slide-container" id="slide_demonstration">
     <h2 class="slide-title" style="text-align: center; width: 100%;"><span class="text-purple">Live Website</span> Demonstration</h2>
-    <div class="content-area" style="align-items: center; justify-content: flex-start; margin-top: 20px;">
-        <p style="font-size: 20px; color: #9ca3af; margin-bottom: 20px;">Experience the UI/UX architecture live at: <a href="https://emonsgamesgallery.netlify.app/" target="_blank" style="color: #22D3EE; text-decoration: none;">emonsgamesgallery.netlify.app</a></p>
-        <div style="width: 100%; height: calc(100vh - 250px); border: 4px solid #A855F7; border-radius: 12px; overflow: hidden; box-shadow: 0 10px 30px rgba(168,85,247,0.3);">
+    <div class="content-area" style="align-items: center; justify-content: flex-start; margin-top: 25px;">
+        <p style="font-size: 24px; color: #9ca3af; margin-bottom: 25px;">Experience the UI/UX architecture live at: <a href="https://emonsgamesgallery.netlify.app/" target="_blank" style="color: #22D3EE; text-decoration: none;">emonsgamesgallery.netlify.app</a></p>
+        <div style="width: 100%; height: calc(100vh - 300px); border: 5px solid #A855F7; border-radius: 12px; overflow: hidden; box-shadow: 0 10px 40px rgba(168,85,247,0.35);">
             <iframe src="https://emonsgamesgallery.netlify.app/" width="100%" height="100%" frameborder="0" style="background-color: #000;"></iframe>
         </div>
     </div>
@@ -1253,20 +1253,20 @@
     <div class="content-area">
         <div class="two-column">
             <div>
-                <h3 style="font-size: 36px; margin-bottom: 20px;">Get in Touch</h3>
-                <p style="font-size: 20px; line-height: 1.8; margin-bottom: 30px;">
+                <h3 style="font-size: 46px; margin-bottom: 25px;">Get in Touch</h3>
+                <p style="font-size: 24px; line-height: 1.8; margin-bottom: 35px;">
                     Whether you need support, want to collaborate, or have inquiries regarding our platform architecture, we are available 24/7.
                 </p>
-                <ul style="list-style: none; padding: 0; font-size: 22px; line-height: 2.5;">
-                    <li><i class="fa-solid fa-envelope text-purple" style="width: 30px;"></i> <strong>Email:</strong> zonge941@gmail.com</li>
-                    <li><i class="fa-brands fa-whatsapp text-cyan" style="width: 30px;"></i> <strong>WhatsApp:</strong> 01679386441</li>
-                    <li><i class="fa-solid fa-globe text-purple" style="width: 30px;"></i> <strong>Website:</strong> emonsgamesgallery.netlify.app</li>
+                <ul style="list-style: none; padding: 0; font-size: 26px; line-height: 2.5;">
+                    <li><i class="fa-solid fa-envelope text-purple" style="width: 40px;"></i> <strong>Email:</strong> zonge941@gmail.com</li>
+                    <li><i class="fa-brands fa-whatsapp text-cyan" style="width: 40px;"></i> <strong>WhatsApp:</strong> 01679386441</li>
+                    <li><i class="fa-solid fa-globe text-purple" style="width: 40px;"></i> <strong>Website:</strong> emonsgamesgallery.netlify.app</li>
                 </ul>
             </div>
-            <div style="text-align: center; background: rgba(255,255,255,0.02); padding: 40px; border-radius: 12px; border: 1px solid rgba(34, 211, 238, 0.2);">
-                <i class="fa-solid fa-headset" style="font-size: 100px; color: #22D3EE; margin-bottom: 20px;"></i>
-                <h3 style="font-size: 28px;">Customer Support</h3>
-                <p style="font-size: 18px; color: #9ca3af;">Dedicated 1-on-1 Messenger and WhatsApp troubleshooting for all product activations.</p>
+            <div style="text-align: center; background: rgba(255,255,255,0.02); padding: 50px; border-radius: 16px; border: 2px solid rgba(34, 211, 238, 0.2);">
+                <i class="fa-solid fa-headset" style="font-size: 120px; color: #22D3EE; margin-bottom: 25px;"></i>
+                <h3 style="font-size: 34px;">Customer Support</h3>
+                <p style="font-size: 22px; color: #9ca3af;">Dedicated 1-on-1 Messenger and WhatsApp troubleshooting for all product activations.</p>
             </div>
         </div>
     </div>
@@ -1276,7 +1276,7 @@
 <div class="slide-container" id="slide22">
     <div class="qa-layout">
         <h2>Questions?</h2>
-        <p style="font-size: 26px;">Thank you for your attention.</p>
+        <p style="font-size: 32px;">Thank you for your attention.</p>
     </div>
 </div>
 
