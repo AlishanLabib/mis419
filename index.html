@@ -18,7 +18,7 @@
         }
 
         body {
-            background-color: #1a1a1a;
+            background-color: #050505;
             margin: 0;
             height: 100vh;
             width: 100vw;
@@ -32,17 +32,17 @@
         .slide-container {
             align-items: flex-start;
             background-color: #050505; /* Deep black background */
-            border-radius: 12px;
-            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
             display: flex;
             flex-direction: column;
             font-family: 'Inter', sans-serif;
-            height: 720px;
+            height: 100vh;
+            width: 100vw;
             justify-content: flex-start;
             overflow: hidden;
-            padding: 50px 60px;
-            position: relative;
-            width: 1280px;
+            padding: 6vh 8vw; /* Responsive full-screen padding */
+            position: absolute;
+            top: 0;
+            left: 0;
             display: none;
         }
 
@@ -1241,7 +1241,7 @@
     <h2 class="slide-title" style="text-align: center; width: 100%;"><span class="text-purple">Live Website</span> Demonstration</h2>
     <div class="content-area" style="align-items: center; justify-content: flex-start; margin-top: 20px;">
         <p style="font-size: 20px; color: #9ca3af; margin-bottom: 20px;">Experience the UI/UX architecture live at: <a href="https://emonsgamesgallery.netlify.app/" target="_blank" style="color: #22D3EE; text-decoration: none;">emonsgamesgallery.netlify.app</a></p>
-        <div style="width: 100%; height: 480px; border: 4px solid #A855F7; border-radius: 12px; overflow: hidden; box-shadow: 0 10px 30px rgba(168,85,247,0.3);">
+        <div style="width: 100%; height: calc(100vh - 250px); border: 4px solid #A855F7; border-radius: 12px; overflow: hidden; box-shadow: 0 10px 30px rgba(168,85,247,0.3);">
             <iframe src="https://emonsgamesgallery.netlify.app/" width="100%" height="100%" frameborder="0" style="background-color: #000;"></iframe>
         </div>
     </div>
@@ -1282,6 +1282,7 @@
 
 <div class="slide-counter">Slide <span id="current-slide">1</span> of <span id="total-slides">28</span></div>
 <div class="presentation-controls">
+    <button onclick="toggleFullScreen()" id="fs-btn"><i class="fa-solid fa-expand"></i> Fullscreen</button>
     <button onclick="prevSlide()"><i class="fa-solid fa-chevron-left"></i> Prev</button>
     <button onclick="nextSlide()">Next <i class="fa-solid fa-chevron-right"></i></button>
 </div>
@@ -1331,6 +1332,18 @@
         showSlide(currentSlideIndex - 1);
     }
 
+    function toggleFullScreen() {
+        if (!document.fullscreenElement) {
+            document.documentElement.requestFullscreen();
+            document.getElementById('fs-btn').innerHTML = '<i class="fa-solid fa-compress"></i> Exit';
+        } else {
+            if (document.exitFullscreen) {
+                document.exitFullscreen();
+                document.getElementById('fs-btn').innerHTML = '<i class="fa-solid fa-expand"></i> Fullscreen';
+            }
+        }
+    }
+
     // Keyboard navigation
     document.addEventListener('keydown', (e) => {
         if (e.key === 'ArrowRight' || e.key === 'Space' || e.key === 'PageDown') {
@@ -1348,4 +1361,3 @@
 
 </body>
 </html>
-```
